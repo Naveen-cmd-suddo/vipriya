@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIPRIYAA Voyages (Uniting the world)</title>
+    <link rel="icon" href="./files/nlogo.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script defer src="scripts/languageSwitcher.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./css/cusrev.css" rel="stylesheet">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<style>
+/* Base styles for the form */
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+.dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+#exchange-rate-iframe {
+            width: 108px; /* Adjust width */
+            height: 50px; /* Adjust height */
+            border: none;
+	    overflow: hidden; 	    
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 1;
+    min-width: 150px;
+}
+
+label {
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background-image: linear-gradient(to bottom, #4567b7, #6495ed);
+    color: #fff;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+    margin-top: 38px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom, #3b5fcb, #4f7aea);
+}
+
+.fly {
+    transform: translate(200px, -50%);
+}
+
+.table-responsive {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.no-flights-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+revrs{
+  min-height: 50vh;
+  margin-bottom: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+
+}
+
+.slide-container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+}
+
+.rvcard {
+  border-radius: 25px;
+  background-color: #FFF;
+  display: flex;  
+}
+
+.rvimage-content,
+.rvcard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.rvimage-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.rvoverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070F4;
+  border-radius: 25px 25px 0 25px;
+}
+
+.rvoverlay::before,
+.rvoverlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+
+.rvoverlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+
+.rvcard-image {
+  position: relative;
+  height: 120px;
+  width: 110px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.rvcard-image .rvcard-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+
+.rvname {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.rvbutton {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rvbutton:hover {
+  background: #265DF2;
+}
+
+.swiper-navBtn {
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #4070F4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    form {
+        flex-direction: row;
+    }
+
+    .form-container {
+    padding: 1px;
+    margin-top: 15px;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 6px 3px;
+    }
+
+    input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 11px;
+    width: 100%;
+    }
+
+    label {
+    font-weight: 450;
+    font-size: 0.9em;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+    }
+
+    button {
+    background-image: linear-gradient(to bottom, #4567b7, #6495ed);
+    color: #fff;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+    margin-top: 10px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+
+}
+</style>
+</head>
+<body>
+<!-- Background Video & Header -->
+
+    <div class="banner">
+        <video src="./files/bgvid.mp4" type="video/mp4" autoplay muted loop></video>
+    
+    <!-- Header -->
+
+		<div class="content" id="home">
+<nav class="navbar">
+        <img src="./files/nlogo.png" alt="Logo 1" class="logo">
+        <ul class="nav-links">
+<li><span lang="en"><a href="index.html#home">Home</a></span><span lang="fr" style="display: none;"><a href="index.html#home">Accueil</a></span></li>
+<li><span lang="en"><a href="index.html#locations">Locations</a></span><span lang="fr" style="display: none;"><a href="index.html#locations">Emplacements</a></span></li>
+<li><span lang="en"><a href="index.html#package">Packages</a></span><span lang="fr" style="display: none;"><a href="index.html#package">Paquets</a></span></li>
+<li><span lang="en"><a href="./about.html">About Us</a></span><span lang="fr" style="display: none;"><a href="./about.html">À propos de nous</a></span></li>
+<li><span lang="en"><a href="./contact.html">Contact Us</a></span><span lang="fr" style="display: none;"><a href="./contact.html">Contactez-nous</a></span></li>
+    <li><select id="languageSelector">
+       <option value="en">English 🇮🇳</option>
+       <option value="fr">French 🇫🇷</option>
+    </select></li>
+    <li><iframe id="exchange-rate-iframe" src="https://docs.google.com/spreadsheets/d/1lDqwbOfLFvHI3YJy4mmOP0DmbQfiFoXNSfZG20VAyv4/pubhtml?gid=0&single=true&range=A1" scrolling="no"></iframe></li>
+	</ul>
+        <a href="./portfolio.html"><img src="./files/vport.png" alt="Logo 2" class="logo1"></a>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+			<div class="title">
+            <h1><span lang="en">VIPRIYAA Voyages (Uniting the world)</span><span lang="fr" style="display: none;">VIPRIYAA Voyages (Unifier le monde)</span></h1>
+            <p><span lang="en">Plan your trip with us and travel around the world with the most affordable packages!</span><span lang="fr" style="display: none;">Planifiez votre voyage avec nous et voyagez à travers le monde avec les forfaits les plus abordables!</span></p>
+            <a href="./ticketFair.html" class="button"><span lang="en">Ticket Availibilities!</span><span lang="fr" style="display: none;">Offres de billets!</span></a>
+            <a href="./visser.html" class="button"><span lang="en">Visa Services!</span><span lang="fr" style="display: none;">Services de visas!</span></a>
+	    <a href="./misser.html" class="button"><span lang="en">Other Services!</span><span lang="fr" style="display: none;">Services divers!</span></a>
+<!-- Flight and tickets details -->
+<div class="form-container">
+    <form id="flightSearchForm">
+        <div class="form-group">
+            <label for="airline">Airline:</label>
+            <select id="airline" name="airline">
+                <option value="all">All</option>
+                <!-- Options populated dynamically -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="from_destination">From:</label>
+            <select id="from_destination" name="from_destination">
+                <option value="" disabled selected>Select From Destination</option>
+                <!-- Options populated dynamically -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="to_destination">To:</label>
+            <select id="to_destination" name="to_destination">
+                <option value="" disabled selected>Select To Destination</option>
+                <!-- Options populated dynamically -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="date_of_travel">Travel Date:</label>
+            <input type="date" id="date_of_travel" name="date_of_travel">
+        </div>
+        <div class="form-group">
+            <button type="submit" id="animatedButton">Search <span class="airplane">&#9992;</span> Flight</button>
+        </div>
+    </form>
+</div>
+			</div>
+		</div>
+	    </div>
+
+
+<div class="table-responsive">
+    <table id="results_table">
+        <!-- Table populated dynamically -->
+    </table>
+</div>
+
+<div class="no-flights-message" id="noFlightsMessage" style="display: none;">
+    No flights found.
+</div>
+
+<!-- Services -->
+
+<section class="container">
+    <div class="text">
+        <h2><span lang="en">We have the best services available for you!</span><span lang="fr" style="display: none;">Nous avons les meilleurs services disponibles pour vous!</span></h2>
+    </div>
+	 <div class="rowitems">
+        <div class="container-box">
+        <div class="container-image">
+           <img src="./files/1a.jpg" alt="Flight Services">
+        </div>
+            <h4>Flight Services</h4>
+            <p>Arrival and Departure</p>
+        </div>
+    
+        <!--<div class="container-box">
+        <div class="container-image">
+           <img src="./files/2a.jpg" alt="Food Services">
+        </div>
+            <h4>Food Services</h4>
+            <p>Catering</p>
+        </div>-->
+
+        <div class="container-box">
+        <div class="container-image">
+            <img src="./files/3a.jpg" alt="Travel Services">
+        </div>
+            <h4>Travel Services</h4>
+            <p>Pick-up/drop</p>
+        </div>
+
+        <div class="container-box">
+        <div class="container-image">
+            <img src="./files/4a.jpg" alt="Hotel Services">
+        </div>
+            <h4>Hotel Services</h4>
+            <p>Check-in/out</p>
+        </div>
+
+     </div>
+
+    </div>
+
+</section>
+
+<!-- Locations -->
+
+<section class="locations" id="locations">
+    <div class="package-title">
+        <h2><span lang="en">Locations</span><span lang="fr" style="display: none;">Emplacements</span></h2>
+    </div>
+
+    <div class="location-content">
+
+        <a href="./locations.html#paris" target="_blank"><div class="col-content">
+            <img src="./files/l3.jpg" alt="">
+            <h5>France</h5>
+            <p>Paris</p>
+        </div></a>
+       
+        <a href="./locations.html#kashmir" target="_blank"><div class="col-content">
+            <img src="./files/l1.jpg" alt="">
+            <h5>India</h5>
+            <p>Kashmir</p>
+        </div></a>
+
+        <a href="./locations.html#dubai" target="_blank"><div class="col-content">
+            <img src="./files/l5.jpg" alt="">
+            <h5>United Arab Emirates</h5>
+            <p>Dubai</p>
+        </div></a>
+     
+        <a href="./locations.html#istanbul" target="_blank"><div class="col-content">
+            <img src="./files/l2.jpg" alt="">
+            <h5>Turkey</h5>
+            <p>Istanbul</p>
+        </div></a>
+
+
+        <a href="./locations.html#bali" target="_blank"><div class="col-content">
+            <img src="./files/l4.jpg" alt="">
+            <h5>Indonesia</h5>
+            <p>Bali</p>
+        </div></a>
+
+        <a href="./locations.html#geneva" target="_blank"><div class="col-content">
+            <img src="./files/l6.jpg" alt="">
+            <h5>Switzerland</h5>
+            <p>Geneva</p>
+        </div></a>
+
+        <a href="./locations.html#port-blair" target="_blank"><div class="col-content">
+            <img src="./files/l7.jpg" alt="">
+            <h5>Andaman & Nicobar</h5>
+            <p>Port Blair</p>
+        </div></a>
+
+        <a href="./locations.html#rome" target="_blank"><div class="col-content">
+            <img src="./files/l8.jpg" alt="">
+            <h5>Italy</h5>
+            <p>Rome</p>
+        </div></a>
+
+    </div>
+</section>
+
+<div class="ad-container">
+<div id="imageContainer">
+    <!-- Add your festival wishes images here -->
+    <img style="border: 2px dashed #000;" src="./files/8848431.jpg" alt="Festival Image 1">
+    <img style="border: 2px dashed #000;" src="./files/pos1.jpg" alt="Festival Image 2">
+    <img style="border: 2px dashed #000;" src="./files/18842486.jpg" alt="Festival Image 3">
+</div>
+</div>
+
+<!-- Advertising Post -->
+    <div class="text">
+        <h2><span lang="en">Ticket Deals</span><span lang="fr" style="display: none;">Offres de billets</span></h2>
+    </div>
+
+<div class="ad-container">
+  <div class="offer">
+    <h2><span lang="en">Special Offer</span><span lang="fr" style="display: none;">Offre spéciale</span></h2>
+    <p>Get 20% discount when you book your flight today!</p>
+    <div class="price">$500</div></br>
+       <div class="image">
+       <img src="./files/14169894.jpg" alt="">
+       </div>
+    <a href="#" class="cta">Book Now</a>
+  </div>
+
+  <div class="offer">
+    <h2><span lang="en">Weekend Sale</span><span lang="fr" style="display: none;">Vente du week-end</span></h2>
+    <p>Grab your tickets for this weekend and save big!</p>
+    <div class="price">$400</div></br>
+       <div class="image">
+       <img src="./files/15181695.jpg" alt="">
+       </div>
+    <a href="#" class="cta">Book Now</a>
+  </div>
+
+  <div class="offer">
+    <h2><span lang="en">Last Minute Deals</span><span lang="fr" style="display: none;">Offres de dernière minute</span></h2>
+    <p>Don&#8217;t miss out! Last-minute flight offers available now.</p>
+    <div class="price">$300</div></br>
+       <div class="image">
+       <img src="./files/14856344.jpg" alt="">
+       </div>
+    <a href="#" class="cta">Book Now</a>
+  </div>
+</div>
+
+<!-- Packages -->
+
+<section class="package" id="package">
+    <div class="package-title">
+        <h2><span lang="en">Packages</span><span lang="fr" style="display: none;">Paquets</span></h2>
+    </div>
+
+    <div class="package-content">
+        
+        <div class="box">
+            <div class="image">
+                <img src="./files/p1.jpg" alt="">
+                <h3>Rs.9,999/-</h3>
+            </div>
+        
+        <div class="dest-content">
+            <div class="location">
+                <h4>Bronze</h4>
+                <ul class="pac-details">
+                    <li>2 Star Hotel</li>
+                    <li>5 Nights Stay</li>
+                    <li>Friendly Tour Guide</li>
+                    <li>24/7 Customer Help Center</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <div class="box">
+            <div class="image">
+                <img src="./files/p2.jpg" alt="">
+                <h3>Rs.19,999/-</h3>
+            </div>
+        
+        <div class="dest-content">
+            <div class="location">
+                <h4>Silver</h4>
+                <ul class="pac-details">
+                    <li>3 Star Hotel</li>
+                    <li>7 Nights Stay</li>
+                    <li>Friendly Tour Guide</li>
+                    <li>24/7 Customer Help Center</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="./files/p3.jpg" alt="">
+                <h3>Rs.29,999/-</h3>
+            </div>
+        
+        <div class="dest-content">
+            <div class="location">
+                <h4>Gold</h4>
+                <ul class="pac-details">
+                    <li>4 Star Hotel</li>
+                    <li>10 Nights Stay</li>
+                    <li>Breakfast and Dinner</li>
+                    <li>Friendly Tour Guide</li>
+                    <li>24/7 Customer Help Center</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="./files/p4.jpg" alt="">
+                <h3>Rs.39,999/-</h3>
+            </div>
+        
+        <div class="dest-content">
+            <div class="location">
+                <h4>Platinum</h4>
+                <ul class="pac-details">
+                    <li>5 Star Hotel</li>
+                    <li>14 Nights Stay</li>
+                    <li>Breakfast, Lunch and Dinner</li>
+                    <li>Bornfire</li>
+                    <li>Friendly Tour Guide</li>
+                    <li>24/7 Customer Help Center</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- User Review -->
+    <div class="text">
+        <h2><span lang="en">User Reviews</span><span lang="fr" style="display: none;">Critiques d&#8217;utilisateurs</span></h2>
+    </div>
+<revrs>
+  <div class="slide-container swiper">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile1.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile2.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile3.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile4.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile5.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile6.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile7.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile8.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+        <div class="rvcard swiper-slide">
+          <div class="rvimage-content">
+            <span class="rvoverlay"></span>
+
+            <div class="rvcard-image">
+              <img src="./files/profile9.jpg" alt="" class="rvcard-img">
+            </div>
+          </div>
+
+          <div class="rvcard-content">
+            <h2 class="rvname">David Dell</h2>
+            <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+              dolor sit amet consectetur adipisicing elit.</p>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</revrs>
+
+<!-- Airlines Logo -->
+<div class="text">
+        <h2><span lang="en">Authorized Partners</span><span lang="fr" style="display: none;">Partenaires autorisés</span></h2>
+    </div>
+<div class="reviews-containern">
+   <div class="reviewn">
+        <img src="./files/air-india-logo.png" alt="Airline Logo 1">
+	<img src="./files/etihad-airways-logo-alt.png" alt="Airline Logo 2">
+	<img src="./files/indigo-logo-alt.png" alt="Airline Logo 3">
+	<img src="./files/qatar1.png" alt="Airline Logo 4">
+	<img src="./files/air-france-logo-alt.png" alt="Airline Logo 5">
+	<img src="./files/1oman.png" alt="Airline Logo 6">
+	<img src="./files/Kuwait.png" alt="Airline Logo 7">
+	<img src="./files/emi1.png" alt="Airline Logo 8">
+	<img src="./files/swiss-logo-alt.png" alt="Airline Logo 9">
+	<img src="./files/turkish-airlines-logo-alt.png" alt="Airline Logo 10">
+	<img src="./files/vistara-logo-alt.png" alt="Airline Logo 11">
+	<img src="./files/wizz-air-logo-alt.png" alt="Airline Logo 12">
+   </div>
+   <div class="reviewn">
+        <img src="./files/air-india-logo.png" alt="Airline Logo 1">
+	<img src="./files/etihad-airways-logo-alt.png" alt="Airline Logo 2">
+	<img src="./files/indigo-logo-alt.png" alt="Airline Logo 3">
+	<img src="./files/qatar1.png" alt="Airline Logo 4">
+	<img src="./files/air-france-logo-alt.png" alt="Airline Logo 5">
+	<img src="./files/1oman.png" alt="Airline Logo 6">
+	<img src="./files/Kuwait.png" alt="Airline Logo 7">
+	<img src="./files/emi1.png" alt="Airline Logo 8">
+	<img src="./files/swiss-logo-alt.png" alt="Airline Logo 9">
+	<img src="./files/turkish-airlines-logo-alt.png" alt="Airline Logo 10">
+	<img src="./files/vistara-logo-alt.png" alt="Airline Logo 11">
+	<img src="./files/wizz-air-logo-alt.png" alt="Airline Logo 12">
+   </div>
+</div>
+
+<!-- Happy customer -->
+<!-- statistics strat -->
+<section id="statistics" class="statistics">
+<div class="container">
+<div class="statistics-counter"> 
+<div class="col-md-3 col-sm-6">
+<div class="single-ststistics-box">
+<div class="statistics-content">
+<div class="counter">90 </div> <span>K+</span>
+</div><!--/.statistics-content-->
+<h3>listings</h3>
+</div><!--/.single-ststistics-box-->
+</div><!--/.col-->
+<div class="col-md-3 col-sm-6">
+<div class="single-ststistics-box">
+<div class="statistics-content">
+<div class="counter">40</div> <span>k+</span>
+</div><!--/.statistics-content-->
+<h3>listing categories</h3>
+</div><!--/.single-ststistics-box-->
+</div><!--/.col-->
+<div class="col-md-3 col-sm-6">
+<div class="single-ststistics-box">
+<div class="statistics-content">
+<div class="counter">65</div> <span>k+</span>
+</div><!--/.statistics-content-->
+<h3>visitors</h3>
+</div><!--/.single-ststistics-box-->
+</div><!--/.col-->
+<div class="col-md-3 col-sm-6">
+<div class="single-ststistics-box">
+<div class="statistics-content">
+<div class="counter">50</div> <span>k+</span>
+</div><!--/.statistics-content-->
+<h3>happy clients</h3>
+</div><!--/.single-ststistics-box-->
+</div><!--/.col-->
+</div><!--/.statistics-counter-->
+</div><!--/.container-->
+
+</section><!--/.counter-->
+<!-- statistics end -->
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="newstext" id="newstextl">
+        <h2><span lang="en">Newsletter</span><span lang="fr" style="display: none;">Bulletin</span></h2>
+        <p><span lang="en">Subscribe to get offers and latest updates every week!</span><span lang="fr" style="display: none;">Abonnez-vous pour recevoir des offres et les dernières mises à jour chaque semaine!</span></p>
+    </div>
+
+    <div class="send">
+    <form action="newsletter.html" method="post">
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+	    <span class="error"><?php echo $emailErr;?></span>
+	    <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4><span lang="en">Quick Links</span><span lang="fr" style="display: none;">Liens rapides</span></h4>
+                <ul>
+                    <li><span lang="en"><a href="./about.html">About Us</a></span><span lang="fr" style="display: none;"><a href="./about.html">À propos de nous</a></span></li>
+                    <li><span lang="en"><a href="./contact.html">Contact Us</a></span><span lang="fr" style="display: none;"><a href="./contact.html">Contactez-nous</a></span></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4><span lang="en">Connect</span><span lang="fr" style="display: none;">Connecter</span></h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                                        
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p><span lang="en">Copyright © 2024 VIPRIYAA Voyages All Rights Reserved.</span><span lang="fr" style="display: none;">Copyright © 2024 VIPRIYAA Voyages Tous droits réservés.</span></p>
+    </div>
+</section>
+<script>
+const images = document.querySelectorAll('#imageContainer img');
+    let currentImageIndex = 0;
+
+    function changeImage() {
+        images[currentImageIndex].style.opacity = 0;
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].style.opacity = 1;
+    }
+
+    setInterval(changeImage, 4000);
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showNextSlide() {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % totalSlides;
+    slides[currentIndex].classList.add('active');
+}
+
+setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+
+$(document).ready(function(){
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1200
+    });
+  });
+
+// Get the navbar, nav links, and burger elements
+const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelector('.nav-links');
+const burger = document.querySelector('.burger');
+
+// Add event listener to the burger
+burger.addEventListener('click', () => {
+  // Toggle the active class on the nav links and burger
+  navLinks.classList.toggle('active');
+  burger.classList.toggle('active');
+});
+
+// form alirnes to user
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch data to populate dropdowns
+    fetch('get_dropdown_data.html')
+        .then(response => response.json())
+        .then(data => {
+            const airlineSelect = document.getElementById('airline');
+            const fromDestinationSelect = document.getElementById('from_destination');
+            const toDestinationSelect = document.getElementById('to_destination');
+
+            data.airlines.forEach(airline => {
+                const option = document.createElement('option');
+                option.value = airline.airline_id;
+                option.textContent = airline.airline_name;
+                airlineSelect.appendChild(option);
+            });
+
+            data.from_destinations.forEach(from => {
+                const option = document.createElement('option');
+                option.value = from;
+                option.textContent = from;
+                fromDestinationSelect.appendChild(option);
+            });
+
+            data.to_destinations.forEach(to => {
+                const option = document.createElement('option');
+                option.value = to;
+                option.textContent = to;
+                toDestinationSelect.appendChild(option);
+            });
+        });
+
+    // Handle form submission
+    document.getElementById('flightSearchForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        fetch('process_flight_search.html', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            const resultsTable = document.getElementById('results_table');
+            const noFlightsMessage = document.getElementById('noFlightsMessage');
+            resultsTable.innerHTML = '';
+
+            if (data.length === 0) {
+                noFlightsMessage.style.display = 'block';
+            } else {
+                noFlightsMessage.style.display = 'none';
+                resultsTable.innerHTML = `
+<tr style="background-color: #f7f7f7; border-bottom: 1px solid #ddd;">
+  <th style="width: 10%; color: #0059b3; font-weight: bold;"><i class="fa fa-plane" style="color: #0059b3;"></i> Airline</th>
+  <th style="width: 10%; color: #337ab7; font-weight: bold;"><i class="fa fa-map-marker" style="color: #337ab7;"></i> From</th>
+  <th style="width: 10%; color: #337ab7; font-weight: bold;"><i class="fa fa-map-marker" style="color: #337ab7;"></i> To</th>
+  <th style="width: 10%; color: #8bc34a; font-weight: bold;"><i class="fa fa-clock-o" style="color: #8bc34a;"></i> Departure Time</th>
+  <th style="width: 10%; color: #8bc34a; font-weight: bold;"><i class="fa fa-clock-o" style="color: #8bc34a;"></i> Arrival Time</th>
+  <th style="width: 10%; color: #2196f3; font-weight: bold;"><i class="fa fa-calendar" style="color: #2196f3;"></i> Date</th>
+  <th style="width: 10%; color: #ff5722; font-weight: bold;"><i class="fa fa-dollar" style="color: #ff5722;"></i> Fare</th>
+</tr>                `;
+                data.forEach(flight => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${flight.airline_name}</td>
+                        <td>${flight.from_destination}</td>
+                        <td>${flight.to_destination}</td>
+                        <td>${flight.departure_time}</td>
+                        <td>${flight.arrival_time}</td>
+                        <td>${flight.date_of_travel}</td>
+                        <td>${flight.fare}</td>
+                    `;
+                    resultsTable.appendChild(row);
+                });
+            }
+        });
+    });
+});
+
+
+//security purposes for right click
+//  const disabledKeys = ["c", "C", "x", "J", "u", "I"]; // keys that will be disabled
+//  const showAlert = e => {
+//    e.preventDefault(); // preventing its default behaviour
+//    return alert("Sorry, you can't view or copy source codes this way!");
+//  }
+//  document.addEventListener("contextmenu", e => {
+//    showAlert(e); // calling showAlert() function on mouse right click
+//  });
+//  document.addEventListener("keydown", e => {
+//    // calling showAlert() function, if the pressed key matched to disabled keys
+//    if((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+//      showAlert(e);
+//    }
+//  });
+</script>
+<!-- JavaScript Libraries -->
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="scripts/main.js"></script>
+<script src="assets/js/jquery.js"></script>
+
+<!-- counter js -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+
+<!--feather.min.js-->
+<script src="assets/js/feather.min.js"></script>
+
+<!--slick.min.js-->
+<script src="assets/js/slick.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="scripts/usrv.js"></script>
+</body>
+</html>

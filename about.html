@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="./files/nlogo.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script defer src="scripts/languageSwitcher.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#exchange-rate-iframe {
+            width: 108px; /* Adjust width */
+            height: 50px; /* Adjust height */
+            border: none;
+	    overflow: hidden; 	    
+}
+.address-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 22px 0px 22px;
+}
+
+.branch {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.branch h2 {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: 30;     
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.branch p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .address-section {
+	margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branch {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+</style>
+</head>
+<div class="aboutbody">
+<nav class="navbar">
+        <img src="./files/nlogo.png" alt="Logo 1" class="logo">
+        <ul class="nav-links">
+<li><span lang="en"><a href="index.html#home">Home</a></span><span lang="fr" style="display: none;"><a href="index.html#home">Accueil</a></span></li>
+<li><span lang="en"><a href="index.html#locations">Locations</a></span><span lang="fr" style="display: none;"><a href="index.html#locations">Emplacements</a></span></li>
+<li><span lang="en"><a href="index.html#package">Packages</a></span><span lang="fr" style="display: none;"><a href="index.html#package">Paquets</a></span></li>
+<li><span lang="en"><a href="./about.html">About Us</a></span><span lang="fr" style="display: none;"><a href="./about.html">À propos de nous</a></span></li>
+<li><span lang="en"><a href="./contact.html">Contact Us</a></span><span lang="fr" style="display: none;"><a href="./contact.html">Contactez-nous</a></span></li>
+    <li><select id="languageSelector">
+       <option value="en">English 🇮🇳</option>
+       <option value="fr">French 🇫🇷</option>
+    </select></li>
+    <li><iframe id="exchange-rate-iframe" src="https://docs.google.com/spreadsheets/d/1lDqwbOfLFvHI3YJy4mmOP0DmbQfiFoXNSfZG20VAyv4/pubhtml?gid=0&single=true&range=A1" scrolling="no"></iframe></li>
+        </ul>
+        <a href="./portfolio.html"><img src="./files/vport.png" alt="Logo 2" class="logo1"></a>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="about">
+           <div class="main">
+            <!--<img src="./files/aboutpic.png" alt="My Photo">-->
+            <div class="abt-text"></br>
+                <h1><span lang="en">About <span>Us</span></span><span lang="fr" style="display: none;">
+À propos de <span>nous</span></span></h1>
+                <p><span lang="en">From start to finish, VIPRIYAA Voyages is here to guarantee your travel experience is seamless, enjoyable, and full of lasting memories. We will be your guide to the world&#8217;s most wonderful destinations, offering customized travel programs and top-notch customer service.</span><span lang="fr" style="display: none;">Du début à la fin, VIPRIYAA Voyages est là pour garantir que votre expérience de voyage soit fluide, agréable et pleine de souvenirs impérissables. Nous serons votre guide vers les plus belles destinations du monde, vous proposant des programmes de voyage personnalisés et un service client de premier ordre.</span></p>
+                <a href="https://www.linkedin.com/in/" class="connectbtn" target="_blank">Connect with me!</a>
+
+                <div class="connect-section">
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" ></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter" ></i></a>
+                        <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin" ></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" ></i></a>
+                    </div>
+
+                </div>
+            </div>
+            
+
+           </div>
+           
+<section class="address-section">
+        <div class="branch">
+            <h2>France</h2>
+            <p>123 Main Street</p>
+            <p>City, State, ZIP</p>
+            <p>Country</p>
+        </div>
+        <div class="branch">
+            <h2>Puducherry</h2>
+            <p>456 Elm Street</p>
+            <p>City, State, ZIP</p>
+            <p>Country</p>
+        </div>
+</section>            
+
+    </section>
+
+
+    <!-- Footer -->
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4><span lang="en">Quick Links</span><span lang="fr" style="display: none;">Liens rapides</span></h4>
+                <ul>
+                    <li><span lang="en"><a href="./about.html">About Us</a></span><span lang="fr" style="display: none;"><a href="./about.html">À propos de nous</a></span></li>
+                    <li><span lang="en"><a href="./contact.html">Contact Us</a></span><span lang="fr" style="display: none;"><a href="./contact.html">Contactez-nous</a></span></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4><span lang="en">Connect</span><span lang="fr" style="display: none;">Connecter</span></h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p><span lang="en">Copyright © 2024 VIPRIYAA Voyages All Rights Reserved.</span><span lang="fr" style="display: none;">Copyright © 2024 VIPRIYAA Voyages Tous droits réservés.</span></p>
+    </div>
+</section>
+<script>
+// Get the navbar, nav links, and burger elements
+const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelector('.nav-links');
+const burger = document.querySelector('.burger');
+
+// Add event listener to the burger
+burger.addEventListener('click', () => {
+  // Toggle the active class on the nav links and burger
+  navLinks.classList.toggle('active');
+  burger.classList.toggle('active');
+});
+</script>   
+</div>
+</html>

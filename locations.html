@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="icon" href="./files/nlogo.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script defer src="scripts/languageSwitcher.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#exchange-rate-iframe {
+            width: 108px; /* Adjust width */
+            height: 50px; /* Adjust height */
+            border: none;
+	    overflow: hidden; 	    
+}
+</style>
+</head>
+<div class="location-body">
+<nav class="navbar">
+        <img src="./files/nlogo.png" alt="Logo 1" class="logo">
+        <ul class="nav-links">
+<li><span lang="en"><a href="index.html#home">Home</a></span><span lang="fr" style="display: none;"><a href="index.html#home">Accueil</a></span></li>
+<li><span lang="en"><a href="index.html#locations">Locations</a></span><span lang="fr" style="display: none;"><a href="index.html#locations">Emplacements</a></span></li>
+<li><span lang="en"><a href="index.html#package">Packages</a></span><span lang="fr" style="display: none;"><a href="index.html#package">Paquets</a></span></li>
+<li><span lang="en"><a href="./about.html">About Us</a></span><span lang="fr" style="display: none;"><a href="./about.html">À propos de nous</a></span></li>
+<li><span lang="en"><a href="./contact.html">Contact Us</a></span><span lang="fr" style="display: none;"><a href="./contact.html">Contactez-nous</a></span></li>
+    <li><select id="languageSelector">
+       <option value="en">English 🇮🇳</option>
+       <option value="fr">French 🇫🇷</option>
+    </select></li>
+    <li><iframe id="exchange-rate-iframe" src="https://docs.google.com/spreadsheets/d/1lDqwbOfLFvHI3YJy4mmOP0DmbQfiFoXNSfZG20VAyv4/pubhtml?gid=0&single=true&range=A1" scrolling="no"></iframe></li>
+        </ul>
+        <a href="./portfolio.html"><img src="./files/vport.png" alt="Logo 2" class="logo1"></a>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+<section class="location-section">
+    <div class="location-heading">
+        <h1>Discover The <span>Beautiful World</span></h1>
+    </div>
+ <div class="location-detail" id="kashmir">
+    <h1>Kashmir</h1>
+    <div class="stars">
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+    </div>
+    <p><span lang="en">Heaven on Earth Kashmir is one of the most beautiful travel destinations to visit in North India. Nowhere in India you will behold the scenic landscapes, icy glaciers, pristine lakes and lofty mountains as beautiful as Kashmir. Serenity and Tranquility redefines itself from the ambiance of Kashmir. Be it summer, Winter or Monsoon, every season has its own charm in Kashmir. The numerous wonders of nature, culture, cuisines and rich history of Kashmir will elevate your travel experience in Incredible India.</span><span lang="fr" style="display: none;">Le paradis sur terre Le Cachemire est l&#8217;une des plus belles destinations de voyage à visiter en Inde du Nord. Nulle part en Inde vous ne verrez des paysages pittoresques, des glaciers glacés, des lacs immaculés et de hautes montagnes aussi belles que le Cachemire. La sérénité et la tranquillité se redéfinissent à partir de l&#8217;ambiance du Cachemire. Que ce soit l&#8217;été, l&#8217;hiver ou la mousson, chaque saison a son propre charme au Cachemire. Les nombreuses merveilles de la nature, de la culture, de la cuisine et de la riche histoire du Cachemire rehausseront votre expérience de voyage dans l&#8217;incroyable Inde.</span></p>
+    <div class="location-img">
+        <img src="./files/t1.jpg" alt="">
+    </div>
+ </div>
+
+ <div class="location-detail" id="istanbul">
+    <h1>Istanbul</h1>
+    <div class="stars">
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star-half'></i></a>
+    </div>
+    <p><span lang="en">Istanbul, that offers unique historical and cultural riches together has hosted many different civilizations with its geography spread over two continents. This unique city which is admired by its charming nature and the attractive atmosphere is also the symbol of dynamic and modern city life. Istanbul has a multicultural texture and a lively atmosphere that melts the past and future in a single pot which provides a sense of universal history at every step.</span><span lang="fr" style="display: none;">Istanbul, qui offre des richesses historiques et culturelles uniques, a accueilli de nombreuses civilisations différentes avec sa géographie répartie sur deux continents. Cette ville unique, admirée par sa nature charmante et son atmosphère attrayante, est également le symbole d&#8217;une vie citadine dynamique et moderne. Istanbul a une texture multiculturelle et une atmosphère animée qui mélange le passé et le futur dans un seul pot qui donne à chaque étape un sentiment d&#8217;histoire universelle.</span></p>
+    <div class="location-img">
+        <img src="./files/t2.jpg" alt="">
+    </div>
+ </div>
+
+ <div class="location-detail" id="paris">
+    <h1>Paris</h1>
+    <div class="stars">
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star-half'></i></a>
+    </div>
+    <p><span lang="en">Paris is a diverse and sophisticated city that appeals to the wealthy but can also be enjoyed on a budget. In addition to the Eiffel Tower, Paris has countless other gorgeous landmarks and monuments that add to the beauty of the spacious boulevards and their charming cafes. French cuisine is also world famous, and you can find some of the best of it in Paris. It has many stunning sights that showcase impressive architecture and design, and these places have become world-famous for their beauty.</span><span lang="fr" style="display: none;">Paris est une ville diversifiée et sophistiquée qui séduit les riches mais qui peut également être appréciée avec un budget limité. En plus de la Tour Eiffel, Paris compte d&#8217;innombrables autres monuments magnifiques qui ajoutent à la beauté des boulevards spacieux et de leurs charmants cafés. La cuisine française est également mondialement connue et vous pouvez en trouver certains des meilleurs à Paris. Il abrite de nombreux sites époustouflants qui présentent une architecture et un design impressionnants, et ces lieux sont devenus mondialement connus pour leur beauté.</span></p>
+    <div class="location-img">
+        <img src="./files/t3.jpg" alt="">
+    </div>
+ </div>
+
+ <div class="location-detail" id="bali">
+    <h1>Bali</h1>
+    <div class="stars">
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star-half'></i></a>
+    </div>
+    <p><span lang="en">Bali&#8217;s beauty goes way deeper than its beautiful appearances. Matching Bali&#8217;s natural wonders are its ever-growing choice of awesome accommodations. From lavish resorts to affordable hostels, developers go all-out to create outstanding, well-equipped and enjoyable places to stay. Private villas can even be rented at unbelievably affordable prices. Many resorts and hotels have splendid swimming and infinity pools, most of which are attractions in themselves.</span><span lang="fr" style="display: none;">La beauté de Bali va bien plus loin que ses belles apparences. Aux merveilles naturelles de Bali s&#8217;ajoute un choix toujours croissant d&#8217;hébergements impressionnants. Des complexes somptueux aux auberges abordables, les promoteurs mettent tout en œuvre pour créer des lieux de séjour exceptionnels, bien équipés et agréables. Des villas privées peuvent même être louées à des prix incroyablement abordables. De nombreux complexes hôteliers et hôtels disposent de splendides piscines et piscines à débordement, dont la plupart sont des attractions en elles-mêmes.</span></p>
+    <div class="location-img">
+        <img src="./files/t4.jpg" alt="">
+    </div>
+ </div>
+
+ <div class="location-detail" id="dubai">
+    <h1>Dubai</h1>
+    <div class="stars">
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+    </div>
+    <p><span lang="en">Dubai is an ideal holiday destination for families, with theme parks, beaches, Friday brunches and more to keep everyone happy. The famous Burj Khalifa, the tallest building in the world, is well worth the entrance fee. Burj Al-Arab, often touted as the world's only 7-star hotel, remains underwhelming. Similarly, the Aquaventure Water Park at the Palms Atlantis Hotel is not to be missed. Jumeriah Beach Residence is well established as Dubai&#8217;s most popular beachfront, and its close proximity to a whole host of restaurants, cafes and shops make it more than worthy of its status.</span><span lang="fr" style="display: none;">Dubaï est une destination de vacances idéale pour les familles, avec des parcs à thème, des plages, des brunchs du vendredi et bien plus encore pour satisfaire tout le monde. Le célèbre Burj Khalifa, le plus haut bâtiment du monde, vaut largement le prix d&#8217;entrée. Le Burj Al-Arab, souvent présenté comme le seul hôtel 7 étoiles au monde, reste décevant. De même, le parc aquatique Aquaventure de l&#8217;hôtel Palms Atlantis est à ne pas manquer. La Jumeriah Beach Residence est bien établie en tant que front de mer le plus populaire de Dubaï, et sa proximité avec de nombreux restaurants, cafés et boutiques la rend plus que digne de son statut.</span></p>
+    <div class="location-img">
+        <img src="./files/t5.jpg" alt="">
+    </div>
+ </div>
+
+ <div class="location-detail" id="geneva">
+    <h1>Geneva</h1>
+    <div class="stars">
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star-half'></i></a>
+    </div>
+    <p><span lang="en">The charming city of Geneva comes with a plethora of attractions and tremendous natural beauty that makes every traveler fall in love with it. However, because of this overabundance of attractions, it becomes difficult for the backpackers to determine where to go first. Most of them generally miss out on all the best things that this fantastic city has to offer. The capital of Switzerland and a beautiful lakeside city, Geneva is home to many international organisations like the UN.</span><span lang="fr" style="display: none;">La charmante ville de Genève regorge d’attractions et d’une immense beauté naturelle qui fait que tous les voyageurs en tombent amoureux. Cependant, en raison de cette surabondance d’attractions, il devient difficile pour les routards de déterminer où aller en premier. La plupart d’entre eux ne profitent généralement pas de toutes les meilleures choses que cette ville fantastique a à offrir. Capitale de la Suisse et belle ville au bord du lac, Genève abrite de nombreuses organisations internationales comme l&#8217;ONU.</span></p>
+    <div class="location-img">
+        <img src="./files/t6.jpg" alt="">
+    </div>
+ </div>
+
+ <div class="location-detail" id="port-blair">
+    <h1>Port Blair</h1>
+    <div class="stars">
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star-half'></i></a>
+    </div>
+    <p><span lang="en">Port Blair is an alluring destination for tourists as it includes a host of attractive locales. There are shimmering but clean beaches, beaches that defy the ferocity of sea and let tourists swim leisurely, relics of colonial power and oppression, many must-go museums, libraries, coral reefs, and more.</span><span lang="fr" style="display: none;">Port Blair est une destination attrayante pour les touristes car elle comprend une multitude de lieux attrayants. Il y a des plages scintillantes mais propres, des plages qui défient la férocité de la mer et permettent aux touristes de se baigner tranquillement, des reliques du pouvoir colonial et de l&#8217;oppression, de nombreux musées incontournables, des bibliothèques, des récifs coralliens, et bien plus encore.</span></p>
+    <div class="location-img">
+        <img src="./files/t7.jpg" alt="">
+    </div>
+ </div>
+
+ <div class="location-detail" id="rome">
+    <h1>Rome</h1>
+    <div class="stars">
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+        <a href="#"><i class='bx bxs-star'></i></a>
+    </div>
+    <p><span lang="en">The capital of one of the most powerful ancient empires in the world, Rome is a fascinating place that has inspired people to visit for millennia. With incredible works of art, a leisurely pace of life and world-renowned cuisine, the Eternal City is worth a visit at least once, though it would take a lifetime to see all it has to offer.</span><span lang="fr" style="display: none;">Capitale de l’un des empires antiques les plus puissants du monde, Rome est un lieu fascinant qui inspire les gens à le visiter depuis des millénaires. Avec des œuvres d&#8217;art incroyables, un rythme de vie tranquille et une cuisine de renommée mondiale, la Ville éternelle mérite une visite au moins une fois, même s&#8217;il faudrait toute une vie pour voir tout ce qu&#8217;elle a à offrir.</span></p>
+    <div class="location-img">
+        <img src="./files/t8.jpg" alt="">
+    </div>
+ </div>
+    </section>
+    <!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4><span lang="en">Quick Links</span><span lang="fr" style="display: none;">Liens rapides</span></h4>
+                <ul>
+                    <li><span lang="en"><a href="./about.html">About Us</a></span><span lang="fr" style="display: none;"><a href="./about.html">À propos de nous</a></span></li>
+                    <li><span lang="en"><a href="./contact.html">Contact Us</a></span><span lang="fr" style="display: none;"><a href="./contact.html">Contactez-nous</a></span></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4><span lang="en">Connect</span><span lang="fr" style="display: none;">Connecter</span></h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" ></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter" ></i></a>
+                    <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin" ></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" ></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p><span lang="en">Copyright © 2024 VIPRIYAA Voyages All Rights Reserved.</span><span lang="fr" style="display: none;">Copyright © 2024 VIPRIYAA Voyages Tous droits réservés.</span></p>
+    </div>
+</section>
+<script>
+// Get the navbar, nav links, and burger elements
+const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelector('.nav-links');
+const burger = document.querySelector('.burger');
+
+// Add event listener to the burger
+burger.addEventListener('click', () => {
+  // Toggle the active class on the nav links and burger
+  navLinks.classList.toggle('active');
+  burger.classList.toggle('active');
+});
+</script>   
+</div>
+</html>

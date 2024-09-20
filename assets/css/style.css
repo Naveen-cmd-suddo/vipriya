@@ -1,0 +1,46 @@
+/*=========== TABLE OF CONTENTS ===========
+==========================================*/
+/*-------------------------------------       
+        9.  Counter
+--------------------------------------*/
+.statistics{
+    position:relative;
+    display: flex;
+    align-items: center;
+    background:url(../../assets/images/counter/view.jpg)no-repeat fixed;
+    background-position:center;
+    background-size:cover;
+    padding:30px 0 10px;
+    top: 5em;
+}
+.statistics:before{
+    position:absolute;
+    content:'';
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+}
+/* single-ststistics-box */
+.single-ststistics-box {
+    text-align: center;
+    margin-bottom:30px;
+
+}
+/* single-ststistics-box */
+.statistics-content{
+    display: flex;
+    justify-content: center;
+    color:#FFFFFF;
+    font-size:60px;
+    
+}
+.statistics-content span {
+    margin-left: 5px;
+}
+.single-ststistics-box h3{
+    color:#fff;
+    font-size:24px;
+    text-transform:capitalize;
+    font-weight: 500;
+}
